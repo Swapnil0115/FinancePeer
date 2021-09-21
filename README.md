@@ -6,6 +6,7 @@ Step 1> Create a virtual environment as follows:
 	-> Type following command ```py -3 -m venv venv```
 	-> After the venv has been created, type the following ```venv\Scripts\activate``` to activate the virtual environment
 	-> I have provided the requirements.txt, install it using the following command ```pip install -r requirements.txt```
+<br />
 Step 2> Download and install xampp from here : https://www.apachefriends.org/index.html
 Step 3> Open the xampp control panel and start the Apache Server and MySQL Database.
 Step 4> Click on the admin tab (in MySQL)of xampp control panel which will open phpmyadmin.
