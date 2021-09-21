@@ -1,10 +1,7 @@
 # FinancePeer
 <br/>
 
-Initial Video Link:- https://drive.google.com/file/d/1pU1_oNkIkiOXVSaDQX11It3jAjhqgXsO/view?usp=sharing
-
-<br/>
-Video Link with a small fix which I missed out in the initial commit:- https://drive.google.com/file/d/19mhmMJcsUn1mSQu5skbcDlS4gek6xDxU/view?usp=sharing
+Video Link:- https://drive.google.com/drive/folders/1jZh88YQURlxbSE3OZdyOLSJaPG0_aQtk?usp=sharing
 
 <br/>
 <br/>
