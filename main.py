@@ -79,7 +79,6 @@ def myaccount():
     else:
         return redirect(url_for('login'))
 
-#Patient Login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if 'loggedin' not in session:
@@ -119,9 +118,9 @@ def login():
         # Show the login form with message (if any)
     else:
         return home()
-    return render_template('patientlogin.html', msg=msg)
+    return render_template('userlogin.html', msg=msg)
 
-#Patient Register
+#User Register
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     # Output message if something goes wrong...
@@ -171,7 +170,7 @@ def register():
         # Show registration form with message (if any)
     else:
         return home()
-    return render_template('patientlogin.html', msg=msg)
+    return render_template('userlogin.html', msg=msg)
 
 
 @app.route('/jsonupload', methods=['GET','POST'])
