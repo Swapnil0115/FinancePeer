@@ -1,4 +1,11 @@
 # FinancePeer
+<br/>
+
+Video Link with a small fix which I missed out in the initial commit:-
+https://drive.google.com/file/d/19mhmMJcsUn1mSQu5skbcDlS4gek6xDxU/view?usp=sharing
+
+<br/>
+
 
 Step 1> Create a virtual environment as follows:
 	-> Go to folder where you've downloaded the files
@@ -23,3 +30,4 @@ Step 8> Now open the cmd and activate the virtual environment using ```venv\Scri
 <br />
 Step 9> Copy the url which is flashing in the cmd to open the app in your local machine.
 <br />
+
