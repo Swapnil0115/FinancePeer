@@ -189,6 +189,7 @@ def jsonup():
         cursor = mysql.get_db().cursor()
         cursor.execute('SELECT * FROM users WHERE ID = %s', [session['id']])
         account = cursor.fetchone()
+        username = account[1]
         if request.method == 'POST':
             f = request.files['file']
 
@@ -202,8 +203,16 @@ def jsonup():
         
 
             df = pd.DataFrame(data)
+            userid = []
+            dfsize = len(df)
+            for i in range(dfsize):
+                userid.append(str(username))
+            
+
             # print for debug
-            print(df)
+            df["userids"] = userid
+
+
             cols = "`,`".join([str(i) for i in df.columns.tolist()])
 
 
@@ -224,9 +233,10 @@ def jsonview():
         cursor = mysql.get_db().cursor()
         cursor.execute('SELECT * FROM users WHERE ID = %s', [session['id']])
         account = cursor.fetchone()
+        username = account[1]
 
         cursor2 = mysql.get_db().cursor()
-        cursor2.execute('SELECT * FROM jsonuser')
+        cursor2.execute('SELECT * FROM jsonuser WHERE userids=%s',[username])
         data = cursor2.fetchall()
         return render_template('JsonView.html',account=account,data=data)
     return redirect(url_for('login'))

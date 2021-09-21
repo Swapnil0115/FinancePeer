@@ -16,5 +16,6 @@ id int,
 userID int,
 title varchar(255),
 body varchar(255),
+userids varchar(255),
 PRIMARY KEY (primid)
 );
