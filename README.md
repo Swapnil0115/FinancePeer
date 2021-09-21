@@ -13,7 +13,7 @@ Step 3> Open the xampp control panel and start the Apache Server and MySQL Datab
 <br />
 Step 4> Click on the admin tab (in MySQL)of xampp control panel which will open phpmyadmin.
 <br />
-Step 5> After you are in phpmyadmin, create a new database named ##finpeer
+Step 5> After you are in phpmyadmin, create a new database named "finpeer'
 <br />
 Step 6> After the db has been created, click on finpeer and go to import tab at the top of the page.
 <br />
